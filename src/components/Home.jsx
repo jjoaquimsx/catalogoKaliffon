@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Container>
-        <Top>Catalogo Kaliffon</Top>
+        <Top>Catalogo Kallifon</Top>
         <Main />
         <Footer />
       </Container>
