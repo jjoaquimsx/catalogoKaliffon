@@ -4,13 +4,22 @@ export const Container = styled.div`
     background-color: crimson;
     width: 100vw;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    section{
+        z-index: 10;
+        display: flex;
+        gap: 30px;
+    }
 `
 
 export const CardImg = styled.main`
     width: 80vw;
     height: auto;
+    margin-top: 15px;
     img{
         width: 100%;
         height: 100%;
@@ -21,7 +30,7 @@ export const CardImg = styled.main`
 `;
 
 export const Button = styled.button`
-    width: 120px;
+    width: 140px;
     height: 40px;
     font-size: 30px;
     font-family: Inter, sans-serif;
@@ -30,4 +39,10 @@ export const Button = styled.button`
     background-color: rgb(139, 28, 28);
     box-shadow: 0px 0px 10px black;
     color: #fff;
+    z-index: 10;
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-family: inherit;
+    }
 `;
